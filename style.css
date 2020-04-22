@@ -1,5 +1,54 @@
 /*
 Theme Name:SPS
 Template:exoplanet
-Version:1.9.1
+Version:1.9.2
 */
+
+#primary {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.title-header {
+    margin-bottom:0;
+}
+
+h1.main-title span, .title-header nav.breadcrumbs ul {
+    background-color: rgba(255,255,255,0.9);
+    padding: 2px;
+}
+
+div.archive-entry {
+    display:flex;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+}
+div.archive-entry figure.entry-figure {
+    margin: 5px;
+}
+div.archive-entry div.post-wrapper {
+    margin: 0 auto 0;
+    background: none;
+}
+
+div.single-entry {
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+div.single-entry div.entry-thumbnail img {
+    position: absolute;
+    top: -350px;
+    margin: 0 auto;
+    width: 90%;
+    z-index:-1000;
+}
+
+div.single-header-title {
+    margin-top: 150px;
+    margin-bottom:20px;
+}
+
