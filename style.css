@@ -18,6 +18,10 @@ h1.main-title span, .title-header nav.breadcrumbs ul {
     padding: 2px;
 }
 
+.entry-content p {
+    margin-bottom: 20px;
+}
+
 div.archive-entry {
     display:flex;
     width: 100%;
