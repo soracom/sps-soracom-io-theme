@@ -1,7 +1,7 @@
 /*
 Theme Name:SPS
 Template:exoplanet
-Version:1.9.4
+Version:1.9.5
 */
 
 #primary {
@@ -39,8 +39,9 @@ div.archive-entry div.post-wrapper {
 div.single-entry {
     background: #fff;
     width: 100%;
-    padding: 20px 50px;
     position: relative;
+    padding: 20px 50px;
+    margin-bottom: 20px;
 }
 
 div.single-entry div.entry-thumbnail img {
