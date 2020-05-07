@@ -23,10 +23,15 @@ $whatsnew_query = new WP_Query( $whatsnew_args );
 			<h2 class="section-title">新着情報</h2>
             <ul>    
                 <?php while ( $whatsnew_query->have_posts() ) : $whatsnew_query->the_post(); ?>
-                <li>
+                <li style="margin:10px; 0">
                     <?php $url = get_field('url'); ?>
-                    <?php if($url){ ?><a href='<?php echo $url ?>'> <?php } ?>
-                    <?php echo get_field('publication_date') ?>&nbsp;<?php the_title(); ?>
+					<?php
+						$date = get_field('publication_date');
+						$datetime = new DateTime($date);
+						echo $datetime->format('Y/m/d');
+					?>&nbsp;
+					<?php if($url){ ?><a href='<?php echo $url ?>'> <?php } ?>
+                    <?php the_title(); ?>
                     <?php if($url){ ?></a><?php } ?>
                 </li>
                 <?php endwhile; ?>
